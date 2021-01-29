@@ -14,7 +14,7 @@ namespace cw7.Services
         public bool PromoteStudent(PromoteStudentRequest promoteStudentRequest)
         {
             using (var connection =
-                new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+                new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
                 command.Connection = connection;
@@ -91,7 +91,7 @@ namespace cw7.Services
 
             DateTime enrollmentStartDate = DateTime.Now;
 
-            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
                 command.Connection = connection;
@@ -194,7 +194,7 @@ namespace cw7.Services
 
         public Study GetStudy(string studyName)
         {
-            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
                 command.Connection = connection;
