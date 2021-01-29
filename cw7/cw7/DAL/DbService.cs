@@ -16,7 +16,7 @@ namespace cw7.DAL
 
             try
             {
-                using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+                using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
@@ -56,7 +56,7 @@ namespace cw7.DAL
         {
             List<Student> students = new List<Student>();
 
-            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
                 command.Connection = connection;
@@ -153,7 +153,7 @@ namespace cw7.DAL
 
         public void PutStudentRefreshToken(Student student, string refreshToken)
         {
-            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+            using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
             using (var command = new SqlCommand())
             {
                 command.Connection = connection;
@@ -186,7 +186,7 @@ namespace cw7.DAL
 
             try
             {
-                using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=s17082;Integrated Security=True"))
+                using (var connection = new SqlConnection("Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True"))
                 using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
